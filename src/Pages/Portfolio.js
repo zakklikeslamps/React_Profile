@@ -8,22 +8,24 @@ const Portfolio = () => {
   const styles = {
 
     image: {
-      
       height: '300px',
       width: '250px'
+    },
 
+    background: {
+      backgroundColor: 'orange'
     }
 
   }
 
     return (
 
-    <div>
+    <div style={styles.background}>
 
         
-        <h1 class="headers">Some Of My Work</h1>
+        <h1 className="headers">Some Of My Work</h1>
     
-       <Wrapper>
+       
         <section className="row row-cols-1 row-cols-lg-3 g-4 m-4">
 
 
@@ -56,7 +58,7 @@ const Portfolio = () => {
         
         
         </section>
-        </Wrapper>
+        
     </div>
 
 
