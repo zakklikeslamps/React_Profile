@@ -8,8 +8,10 @@ const Portfolio = () => {
   const styles = {
 
     image: {
+      
       height: '300px',
       width: '250px'
+
     }
 
   }
@@ -22,7 +24,7 @@ const Portfolio = () => {
         <h1 class="headers">Some Of My Work</h1>
     
        <Wrapper>
-        <section className="row row-cols-lg-3 g-4 m-4">
+        <section className="row row-cols-1 row-cols-lg-3 g-4 m-4">
 
 
           <Projects
