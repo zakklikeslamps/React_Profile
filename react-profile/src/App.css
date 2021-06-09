@@ -21,11 +21,16 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(32, 34, 204);
+}
+
+a {
+  /* color: rgb(16, 235, 100); */
+  color: rgb(160, 199, 53);
 }
 
 .App-link {
-  color: #61dafb;
+  color: rgb(16, 235, 100);
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +41,28 @@
     transform: rotate(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/*.Footer {
+  
+  height: 50px;
+
+}*/
+
+.Bio {
+  width: 400px;
+  height: 550px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  float: left;
+}
+
+/* .link {
+  color: rgb(16, 235, 100);
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+} */

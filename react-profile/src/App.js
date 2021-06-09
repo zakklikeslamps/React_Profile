@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'
+import { HashRouter as Router, Route } from 'react-router-dom';
+
+//components
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+
+//pages
+import Home from './Pages/Home';
+import Contact from './Pages/Contact'
+import Portfolio from './Pages/Portfolio';
+
+//import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Ahoy there, Matey!
-
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/zakklikeslamps"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Here be me github!
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Nav /> 
+      <div className="App">
+      
+      
+          <Route exact path="/" component= {Home}/>
+          <Route exact path="/home" component= {Home}/>
+          <Route exact path="/portfolio" component={Portfolio}/>
+          <Route exact path="/contact" component= {Contact}/>
+        
+  
+      </div>
+      <Footer />
+    </Router>
   );
 }
 
